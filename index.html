@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlixBus-Ticket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External Css link  -->
+  <title>FlixBus-Ticket</title>
+  <!-- daisy ui cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- icon link  -->
+  <script src="https://kit.fontawesome.com/2344fa13fc.js" crossorigin="anonymous"></script>
+  <!-- custom color -->
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'text-color': '#414040',
+            'btn-primary-bg': '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Inline css styles -->
+  <style>
+    .font-garamond {
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
+
 </head>
-<body>
-    
+
+<body >
+  <header class="max-w-[1140px] mx-auto mt-5">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Destination</a></li>
+              <li><a href="">Search</a></li>
+              
+            </ul>
+          </div>
+          <a href=""><h1 class="text-sm lg:text-2xl font-bold text-black">FlixBus-Ticket</h1></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a href="">Home</a></li>
+            <li><a href="">About <i ></i></a></li>
+            <li><a href="">Destination <i></i></a></li>
+            <li><a href="">Search <i ></i></a></li>
+            
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="text-[#1DD100] font-bold bg-[#0C5400] px-3 py-3 rounded-md flex justify-center gap-2 items-center ">Bus <img class="max-w-[20px] " src="images/bus-logo.png" alt=""></button>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <div>
+      <div class="hero h-[70vh]  mt-12 rounded-lg bg-cover"
+        style=" background-image: url(./images/banner.png); ">
+        <div class="hero-overlay "></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="lg:space-y-10">
+            <h1 class="text-2xl lg:text-7xl font-extrabold text-white">End-to-End Travel with  </h1>
+            <h1 class="text-2xl lg:text-6xl font-bold text-center text-[#1DD100] ">FlixBus Paribahan</h1>
+            <p class=" text-balance lg:text-xl text-[#E7E7E7]">TYes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined ..</p>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-8justify-center items-center mt-2">
+            
+              <button class="text-black font-bold bg-[#1DD100] px-3 py-3 rounded-md mx-auto">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  
+  
 </body>
+
 </html>
