@@ -2,128 +2,185 @@
 <html data-theme="light" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- External Css link  -->
-  <title>FlixBus-Ticket</title>
-  <!-- daisy ui cdn link  -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Font link  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <!-- icon link  -->
-  <script src="https://kit.fontawesome.com/2344fa13fc.js" crossorigin="anonymous"></script>
-  <!-- custom color -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Css link  -->
+    <title>FlixBus-Ticket</title>
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- icon link  -->
+    <script src="https://kit.fontawesome.com/2344fa13fc.js" crossorigin="anonymous"></script>
+    <!-- custom color -->
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'text-color': '#414040',
-            'btn-primary-bg': '#B68C5A',
-          }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'text-color': '#414040',
+                        'btn-primary-bg': '#B68C5A',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-  <!-- Inline css styles -->
-  <style>
-    .font-garamond {
-      font-family: 'EB Garamond', serif;
-    }
-  </style>
+    </script>
+    <!-- Inline css styles -->
+    <style>
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
 
 </head>
 
-<body >
-  <header class="max-w-[1140px] mx-auto mt-5">
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Destination</a></li>
-              <li><a href="">Search</a></li>
-              
-            </ul>
-          </div>
-          <a href=""><h1 class="text-sm lg:text-2xl font-bold text-black">FlixBus-Ticket</h1></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-xl">
-            <li><a href="">Home</a></li>
-            <li><a href="">About <i ></i></a></li>
-            <li><a href="">Destination <i></i></a></li>
-            <li><a href="">Search <i ></i></a></li>
-            
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="text-[#1DD100] font-bold bg-[#0C5400] px-3 py-3 rounded-md flex justify-center  items-center gap-2 ">Bus <img class="max-w-[20px] " src="images/bus-icon.png" alt=""></button>
-          
-        </div>
-      </div>
-    </nav>
-    <!-- Banner -->
-    <div>
-      <div class="hero h-[70vh]  mt-12 rounded-lg bg-cover"
-        style=" background-image: url(./images/banner.png); ">
-        <div class="hero-overlay "></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="lg:space-y-10">
-            <h1 class="text-2xl lg:text-7xl font-extrabold text-white">End-to-End Travel with  </h1>
-            <h1 class="text-2xl lg:text-6xl font-bold text-center text-[#1DD100] ">FlixBus Paribahan</h1>
-            <p class=" text-balance lg:text-xl text-[#E7E7E7]">TYes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined ..</p>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-8justify-center items-center mt-2">
-            
-              <button class="text-black font-bold bg-[#1DD100] px-3 py-3 rounded-md mx-auto">Buy Tickets</button>
-            </div>
-          </div>
-        </div>
-      </div>
+<body>
+    <header class="max-w-[1140px] mx-auto mt-5">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Destination</a></li>
+                            <li><a href="">Search</a></li>
 
-    </div>
-  </header>
-  <main>
-    <!-- Best offers for you -->
-    <section class="max-w-[1140px] mx-auto mt-14">
-        <h1 class=" text-2xl lg:text-4xl text-center text-black font-bold">Best offers for you</h1>
-        <div class="flex flex-col lg:flex-row gap-10 mt-14">
-            <div>
-                <img src="images/Group 113.png" alt="">
+                        </ul>
+                    </div>
+                    <a href="">
+                        <h1 class="text-sm lg:text-2xl font-bold text-black">FlixBus-Ticket</h1>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About <i></i></a></li>
+                        <li><a href="">Destination <i></i></a></li>
+                        <li><a href="">Search <i></i></a></li>
 
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button
+                        class="text-[#1DD100] font-bold bg-[#0C5400] px-3 py-3 rounded-md flex justify-center  items-center gap-2 ">Bus
+                        <img class="max-w-[20px] " src="images/bus-icon.png" alt=""></button>
+
+                </div>
             </div>
-            <!-- card section  -->
-            <div class="relative ">
-                <img src="images/Rectangle 8.png" alt="" >
-                <img  class="absolute top-0  right-[37%] max-w-[30px] lg:max-w-[60px]" src="images/cupon-devider.png" alt="">
-               <h1 class="absolute top-0 left-7 mt-4 lg:mt-10 text-[#030712] " ><span class="text-4xl font-bold">20% OFF</span> <br> <span class="text-center lg:text-2xl">on your next purchase
-            </span>
-            <br><span>use by January 2024</span>
-            </h1>
-            <h1 class="absolute top-0 right-6 lg:right-12 mt-10 lg:mt-14 "><span class="lg:text-4xl text-black font-bold">Couple 20</span>
-               <br> <span>Coupon Code</span></h1>
+        </nav>
+        <!-- Banner -->
+        <div>
+            <div class="hero h-[70vh]  mt-12 rounded-lg bg-cover" style=" background-image: url(./images/banner.png); ">
+                <div class="hero-overlay "></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="lg:space-y-10">
+                        <h1 class="text-2xl lg:text-7xl font-extrabold text-white">End-to-End Travel with </h1>
+                        <h1 class="text-2xl lg:text-6xl font-bold text-center text-[#1DD100] ">FlixBus Paribahan</h1>
+                        <p class=" text-balance lg:text-xl text-[#E7E7E7]">TYes, you can run unit tests and view the
+                            results directly within the app. <br> The integrated testing features allow for a
+                            streamlined ..</p>
+                        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8justify-center items-center mt-2">
 
+                            <button class="text-black font-bold bg-[#1DD100] px-3 py-3 rounded-md mx-auto">Buy
+                                Tickets</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+    </header>
+    <main class="max-w-[1140px] mx-auto mt-14">
+        <!-- Best offers for you -->
+        <section>
+            <h1 class=" text-2xl lg:text-4xl text-center text-black font-bold">Best offers for you</h1>
+            <div class="flex flex-col lg:flex-row gap-10 mt-14">
+                <div>
+                    <img src="images/Group 113.png" alt="">
 
-    </section>
-  </main>
-  
+                </div>
+                <!-- card section  -->
+                <div class="relative ">
+                    <img src="images/Rectangle 8.png" alt="">
+                    <img class="absolute top-0  right-[37%] max-w-[30px] lg:max-w-[60px]" src="images/cupon-devider.png"
+                        alt="">
+                    <h1 class="absolute top-0 left-7 mt-4 lg:mt-10 text-[#030712] "><span class="text-4xl font-bold">20%
+                            OFF</span> <br> <span class="text-center lg:text-2xl">on your next purchase
+                        </span>
+                        <br><span>use by January 2024</span>
+                    </h1>
+                    <h1 class="absolute top-0 right-6 lg:right-12 mt-10 lg:mt-14 "><span
+                            class="lg:text-4xl text-black font-bold">Couple 20</span>
+                        <br> <span>Coupon Code</span>
+                    </h1>
+
+                </div>
+
+            </div>
+            <!-- button sec -->
+            <div class="text-center mt-10">
+                <button class="btn text-[#1DD100] border-2 border-[#1DD100] bg-white">See All Offers</button>
+            </div>
+
+        </section>
+        <!-- P.H Paribahan -->
+        <section class="mt-10 p-10">
+            <h1 class="text-center text-4xl text-black font-bold">FlixBus Paribahan</h1>
+            <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The
+                <br>integrated testing features allow for a streamlined .</p>
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div >
+                <div class="flex flex-col lg:flex-row justify-between lg:gap-96 mt-10">
+                    <!-- 1st item  -->
+                    <div class="flex justify-center items-center  space-x-4 ">
+                        <div><img src="./images/bus-logo.png" alt=""></div>
+                        <div>
+                            <h1 class="text-xl lg:text-3xl text-black font-bold">FlixBus Paribahan</h1>
+                            <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <!-- 40 Seats left button -->
+                    <div class="text-center">
+                        <button class="btn  text-xl font-bold text-[#1DD100] border-2 border-[#1DD100]">40 Seats
+                            left</button>
+                    </div>
+                    
+                </div>
+                <div class=" flex justify-between border-b-2 border-dotted mt-6">
+                    <h1>Route</h1>
+                    <h1>Dhaka - Sylhet</h1>
+                </div>
+                <div class=" flex justify-between border-b-2 border-dotted mt-5">
+                    <h1>Departure Time</h1>
+                    <h1>9:00PM</h1>
+                </div>
+                <div class="mt-6">
+                    <button class="btn">Boarding Point - Laxmipur</button>
+                    <button class="btn">Dropping Point - Bogura</button>
+                    <button class="btn">Est. Time - 11 Hour</button>
+                </div>
+                
+            </div>
+            <div>5555tk</div>
+        </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
