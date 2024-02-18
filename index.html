@@ -461,8 +461,8 @@
                             <!-- cupon code  -->
                             <div class="p-5">
                                 <label class="input  flex items-center py-7 ">
-                                    <input type="text" class="flex-grow " placeholder="Have any copupon?"  />
-                                    <button class="btn bg-[#1DD100] ">Apply</button>
+                                    <input id="input-filed" type="text" class="flex-grow " placeholder="Have any copupon?"  />
+                                    <button id="apply-btn" disabled  class="btn bg-[#1DD100] ">Apply</button>
                                   </label>
                             </div>
                             <div>
@@ -478,38 +478,13 @@
                             <!-- passenger information -->
                             <div class="px-5 space-y-4">
                                 <!-- Name information -->
-                                <label class="form-control w-full max-w-xs">
-                                    <div class="label">
-                                      <span class="label-text text-xl text-black font-bold">Passenger Name*</span>
-                                      
-                                    </div>
-                                    <input id="name_Input" type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
-                                    
-                                  </label>
-                                   <!-- Number information -->
-                                <label class="form-control w-full max-w-xs">
-                                    <div class="label">
-                                      <span class="label-text text-xl text-black font-bold">Phone Number*</span>
-                                      
-                                    </div>
-                                    <input id="number_input" type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
-                                    
-                                  </label>
-                                   <!-- Name information -->
-                                   <label class="form-control w-full max-w-xs">
-                                    <div class="label">
-                                  <span class="label-text text-xl text-black font-bold">Email ID</span>
-                                      
-                                    </div>
-                                    <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
-                                    
-                                  </label>
+                                
                                   <button id="input_btn" class="btn bg-[#1DD100] w-full text-2xl text-white font-bold hover:bg-[#1DD100]">Next</button>
                             </div>
-                            <div class="flex flex-col text-center lg:flex-row  gap-6 mt-6">
+                            <!-- <div class="flex flex-col text-center lg:flex-row  gap-6 mt-6">
                                 <u><a class="text-xl text-gray-600" href="">Terms and Conditions</a></u>
                                 <u><a class="text-xl text-gray-600" href="">Cancellation Policy</a></u>
-                            </div>
+                            </div> -->
                             
                         </div>
                 
@@ -559,7 +534,35 @@
 
     </div>
 </section>
-
+<!-- <div>
+    <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-xl text-black font-bold">Passenger Name*</span>
+          
+        </div>
+        <input id="name_Input" type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+        
+      </label>
+        Number information -->
+    <!-- <label class="form-control w-full max-w-xs">
+        <div class="label">
+          <span class="label-text text-xl text-black font-bold">Phone Number*</span>
+          
+        </div>
+        <input id="number_input" type="number" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+        
+      </label> -->
+       <!-- Name information -->
+       <!-- <label class="form-control w-full max-w-xs">
+        <div class="label">
+      <span class="label-text text-xl text-black font-bold">Email ID</span>
+          
+        </div>
+        <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
+        
+      </label> 
+</div> 
+-->
   <script src="js/index.js"></script>
   <script src="js/utility.js"></script>
 </body>
